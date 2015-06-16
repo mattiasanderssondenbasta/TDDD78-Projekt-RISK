@@ -14,7 +14,7 @@ public class Board
         world = World.getWorld();
 
         JFrame frame = new RiskFrame(world);
-        String xDD = new String();
+        
     }
 
     public static void initBoard() {
