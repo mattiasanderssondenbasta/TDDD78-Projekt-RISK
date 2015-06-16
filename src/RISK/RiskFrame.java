@@ -27,7 +27,6 @@ public class RiskFrame extends JFrame
 	    }
 	};
 
-		//JLabel phaseLabel = new JLabel("" + comp.getRiskEngine().getCurrentPhase());
 
 
 	JPanel gamePanel = new JPanel();
