@@ -38,19 +38,12 @@ public class RiskFrame extends JFrame
 
 	JTextArea textArea = comp.getTextArea();
 
-	//textArea.setEditable(false);
+
 	DefaultCaret caret = (DefaultCaret)textArea.getCaret();
 	caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 
 	JScrollPane scrollPane = new JScrollPane(textArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-	//scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
-	//scrollPane.setPreferredSize(new Dimension(250, 250));
-		//scrollPane.setViewportView(textArea);
-	/*for (Continent continent : world) {
-	    for (ContinentTerritory continentTerritory : continent.getTerritorys()) {
-		continentTerritory.addMouseListener(new TerritoryListener());
-	    }
-	}*/
+
 	addMouseListener(comp);
 
 		nextPhaseButton.addActionListener(nextPhase);
